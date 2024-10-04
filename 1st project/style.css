@@ -1,0 +1,708 @@
+                                                                /* CSS RESET */
+ *
+  {
+     padding : 0;
+     margin : 0;
+     box-sizing : border-box;
+  }
+   
+                                                                  /* BACKGROUNG COLOR AND SCROLL BEHAVIOR */
+  body
+   {
+      background-color: rgb(30, 10, 66);
+      scroll-behavior: smooth;
+   }   
+   
+                                                                 /* HOME SECTION AND HOME PAGE IMAGE  */
+  .homePage
+      {
+         display: flex;
+         flex-wrap: wrap;
+         width: auto;
+         height: 100vh;
+         position: relative;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center;
+         background-image: url("Img/homeImg.jpg");
+         overflow: hidden;
+      }   
+      
+                                                                      /* HOME PAGE TEXT */
+  .homePageText
+       {
+           font-family: 'Arial Narrow Bold', sans-serif;
+           font-size: 6.6em;
+           font-weight: bold;
+           color: #f6c1c1;
+           text-shadow: 4px 4px 3px #000000;
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           text-transform: capitalize;
+       }   
+       
+                                                                       /* MAIN STYLING */
+  .popularPlaces
+      {
+         height: 25vh;
+         width: auto;
+         font-size: larger;
+         text-transform: capitalize;
+         background-color: rgb(30, 10, 66);   
+      }  
+      
+  .popularPlaces > .subText1
+      {
+         font-size: 1.8em;
+         padding-top: 32px;
+         padding-left: 42px;
+         font-family: 'Arial Narrow bold', Arial, sans-serif;
+         color: rgb(249, 20, 249);  
+      }
+      
+  .popularPlaces > .subText2
+      {
+         padding-left: 42px;
+         font-size: 32px; 
+         font-weight: 550;
+         line-height: 38px;
+         font-family: 'Arial Narrow bold', Arial, sans-serif;
+         color: wheat;  
+
+      }
+      
+  img
+    {
+       max-width: 100%;
+       height: auto;
+       vertical-align: middle;
+       display: inline-block;
+    } 
+    
+  .destImgSec 
+      {
+         cursor: pointer;
+      }
+
+  .destImgSec > .grid-wrapper > div 
+      {
+         position: relative;
+         overflow: hidden;
+      }
+      
+  .destImgSec > .grid-wrapper > div > p 
+      {
+         font-size: 1.32em;
+         font-weight: 600;
+         font-family:'Arial Narrow Bold', sans-serif;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         text-align: center;
+         padding: 10px;
+         margin: 0;
+         background-color: rgba(255, 255, 255, 0.348);
+         backdrop-filter: blur(6px);
+         color: rgb(243, 246, 244);
+      }
+
+   .grid-wrapper > div
+         {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 1em;
+         }    
+      
+   .grid-wrapper > div > img
+      {
+         width: 100%;
+         height: 100%;
+         background-size: cover;
+         border-radius: 8px;
+         border: 0.2em solid whitesmoke;
+      }
+      
+   .grid-wrapper
+      {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+         grid-template-rows: repeat(2, 1fr);
+         /* grid-template-columns: repeat(3, 1fr); */
+      }
+      
+  .destImgSec > .grid-wrapper > div > img 
+       {
+         transition: transform 0.5s ease-in-out;
+       }
+       
+  .destImgSec > .grid-wrapper > div:hover > img 
+       {
+         transform: scale(1.2);
+       } 
+
+  .firstQuotes > p
+      {  font-size: 2.6em;
+         font-family:'Arial Narrow Bold', sans-serif;
+         font-weight: 600;
+         text-transform: capitalize;
+         text-decoration: underline;
+         color: palevioletred;
+         text-align: center;
+         margin-top: 32px;
+      }
+
+  .container
+      {
+         margin-top: 4.2em;
+         display: grid;
+         grid-template-columns: repeat(3, auto) ;
+         grid-template-rows: 60px 90px 1fr;
+      }
+      
+   .container > .logo
+      {
+         margin-top: 2em;
+         margin-left: 0.7em;
+      }      
+      
+   .container > .about-us > p
+      {
+         padding-left: 16px;
+         font-size: 2em;
+         font-weight: bold;
+         font-family:'Arial Narrow Bold', sans-serif;
+         color: rgb(220, 144, 46);
+         display: flex;
+         justify-content: flex-start;
+         align-items: center;
+         
+      }    
+      
+   .container > .About-us
+       {
+          text-transform: capitalize;
+          font-size: 1.8em;
+          font-weight: bold;
+          font-family:'Arial Narrow Bold', sans-serif;
+          color: wheat;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          grid-column: 2/4;
+          padding-left: 20px;
+       }    
+      
+   .container > .moreAbout-us
+       {
+          margin: 8px;
+          font-family: 'Arial Narrow', Arial, sans-serif;
+          font-weight: 300;
+          font-size: 1.5em;
+          text-align: justify;
+          line-height: 32px;
+          word-spacing: 0.3em;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding-left: 16px;
+          padding-right: 20px;
+          grid-column: 2/4;
+          color: white;
+       }  
+      
+  .textPackages
+      {
+         padding-top: 32px;
+         padding-left: 42px;
+         font-family: 'Arial Narrow bold', Arial, sans-serif;  
+      }      
+      
+  .textPackages > .packText1
+      {
+         font-size: 2.2em;
+         color: palevioletred;
+         margin-bottom: 12px;
+      }
+
+  .textPackages > .packText2
+       {
+          color: whitesmoke;
+          font-size: 1.8em;
+          line-height: 38px;
+       }      
+
+  .cardSection
+      {
+         width: auto;
+         height: auto;
+         margin: 0;
+         display: flex;
+         justify-content: space-evenly;
+         flex-wrap: wrap;
+         gap: 30px;
+         cursor: pointer;
+      }       
+      
+  .cardSection > .card > .cardImg
+      {
+          width: 100%;
+          min-height: 100%;
+          border-radius: 20px;
+          border: 5px solid whitesmoke;
+          overflow: hidden;
+       }     
+
+  .cardSection > .card > .cardImg
+       {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+       }  
+
+  .cardSection
+      {
+         padding: 30px 0;
+         overflow: hidden;
+      }      
+
+   .overlay > h1
+       {
+          color: white;
+          font-family:'Arial Narrow Bold', sans-serif;
+          line-height: 25px;
+          font-size: 1.6em;
+          padding-bottom: 12px;
+       }   
+
+  .overlay > p
+      {  color: white;
+         font-family:'Arial Narrow Bold', sans-serif;
+         margin-bottom: 26px;
+         line-height: 25px;
+         font-weight: 500;
+         font-size: 1.32em;
+      }       
+
+  .cardBox
+     {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+        
+     }      
+
+  .cardBox
+      {
+         border-radius: 10px;
+         position: relative;
+         overflow: hidden;
+         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.888);
+      }  
+      
+  .card > .cardImg
+      {
+         width: 100%;
+         border-radius: 10px;
+         display: block;
+         transition: transform 0.5s ease-in-out;
+      }   
+      
+  .overlay
+      {
+         height: 0;
+         width: 100%;
+         background-color: rgba(255, 255, 255, 0.093);
+         backdrop-filter: blur(4px);
+         border-radius: 10px;
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         overflow: hidden;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         flex-wrap: wrap;
+         padding: 0 40px;
+         text-align: center;
+         font-size: 1em;
+         transition: height 0.4s ease-in-out;
+      }  
+      
+  .overlay > h1
+      {
+         margin-bottom: 8px;
+         margin-top: auto;
+      }      
+
+  .card:hover > img
+      {
+         transform: scale(1.2);
+      }      
+
+  .card:hover > .overlay
+      {
+         height: 100%;
+      }
+
+  .review
+      {
+         height: 12vh;
+         width: auto;
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+      }  
+
+  .review > p
+      {
+         font-size: 2em;
+         font-weight: 600;
+         font-family:'Arial Narrow Bold', sans-serif;
+         color: rgb(249, 20, 249);  
+         flex-wrap: wrap;
+
+      }   
+      
+  .reviewText 
+      {
+         height: 10vh;
+         width: auto;
+      }      
+
+  .reviewText > p
+      {
+         color: white;
+         font-size: 1.2em;
+         font-weight: 500;
+         font-family:'Arial Narrow Bold', sans-serif;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         flex-wrap: wrap;
+         margin-bottom: 10px;
+      }      
+      
+  .rating
+     {
+        height: 10vh;
+        margin-bottom: 10px;
+     }   
+
+  .rating > .star
+      {
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }   
+
+  .rating > .reviewHolder > p
+     {
+        color: #fff;
+        font-size: 1.2em;
+        font-family:'Arial Narrow Bold', sans-serif;
+     }   
+     
+  .rating > .star, .reviewHolder 
+     {
+        display: flex;
+        justify-content: center;
+     }    
+
+  .bookNow
+      {
+         height: 8vh;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+      }
+
+  .bookNow > a > button
+      {
+         font-size: 1.6em;
+         font-family: 'Arial Narrow Bold', sans-serif;
+         background: rgba(128, 128, 128, 0.663);
+         border: 4px solid slategrey;
+         border-radius: 16px;
+         color: #1cfefe;
+         cursor: pointer;
+      }      
+
+  .animatedPic
+       {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+       }
+
+  .animatedPic > .discount > .splOffer
+       {
+          color: burlywood;
+          font-size: 3em;
+          text-decoration: underline;
+          font-style: italic;
+          padding-left: 1em;
+       }     
+       
+  .animatedPic > .discount > .Off
+      {
+         padding-right: 22px;
+         color: #dfd0d7;
+         font-size: 5em;
+         font-family: Arial, Helvetica, sans-serif;
+         font-style: italic;
+         text-shadow: 4px 4px 4px black;
+         text-decoration: underline;
+         text-decoration-color: rgb(233, 183, 117);
+      }
+
+  footer
+     {  min-height: 20vh;
+        background-image: linear-gradient(to right, #253486, #4b3778); 
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+     }   
+     
+  footer > .ftrAbout-us > h2
+      {
+         color: wheat;
+         font-family:'Arial Narrow Bold', sans-serif;
+         line-height: 2em;
+         text-decoration: underline;
+         text-decoration-color: rgb(165, 129, 83);
+      } 
+      
+  footer > .ftrAbout-us > .ftrPara
+      {
+         color: wheat;
+         font-size: 1em;
+         font-weight: 100;
+         font-family: Arial, sans-serif;
+         line-height: 1.4em;
+      }  
+      
+  footer > .services > h2
+      {
+         color: wheat;
+         font-family:'Arial Narrow Bold', sans-serif;
+         line-height: 2em;
+         text-decoration: underline;
+         text-decoration-color: rgb(165, 129, 83);
+      }  
+      
+  footer > .services > ol
+      {
+         color: wheat;
+         font-size: 1.1em;
+         font-weight: 100;
+         font-family: Arial, sans-serif;
+         line-height: 1.3em;
+         list-style: none;
+         text-align: center;
+      }       
+      
+   footer > .callus > h2
+      {
+         color: wheat;
+         font-family:'Arial Narrow Bold', sans-serif;
+         line-height: 2em;
+         text-decoration: underline;
+         text-decoration-color: rgb(165, 129, 83);
+      }  
+
+  footer > .callus > p
+     {
+      color: wheat;
+      font-size: 1em;
+      font-weight: 100;
+      font-family: Arial, sans-serif;
+      line-height: 1.6em;
+     }    
+     
+  @media (width <= 1460px )
+     {
+        .homePage
+            {
+               width: auto;
+               background-size: cover;
+            }
+
+        .homePageText
+            {
+               font-size: 5em; 
+               text-align: center;
+            }
+            
+        .animatedPic > .discount > .splOffer
+            {
+               font-size: 2.6em;
+            }
+
+        .animatedPic > .discount > .Off
+             {
+                 font-size: 4em;
+             }
+
+     } 
+     
+                                                               /* RESPONSIVE  */
+  @media (width <= 1350px)  
+      {
+         .homePageText
+             {
+                font-size: 4.3em;
+                text-align: center;
+             }
+
+        .animatedPic > .discount > .splOffer
+            {
+               font-size: 2em;
+            }
+
+        .animatedPic > .discount > .Off
+             {
+                 font-size: 3em;
+             }
+
+        .ftrAbout-us
+            {
+               display: flex;
+               justify-content: space-evenly;
+               flex-direction: column;
+            }
+
+        .ftrAbout-us > h2 
+            {
+               font-size: 1.2em;
+            }  
+            
+        .services > h2
+            {
+               font-size: 1.2em;
+            }    
+            
+        .callus > h2
+            {
+               font-size: 1.2em;
+            }   
+      }   
+
+  @media (width <= 1110px)
+      {
+         .homePageText
+              {
+                 text-align: center;
+              }
+
+         .container > .moreAbout-us
+             {
+                font-size: 1.3em;
+                font-weight: 100;
+             }
+
+        .firstQuotes > p
+             {
+                font-size: 2em;
+                font-weight: 500;
+             }     
+
+        .container > .about-us
+             {
+                margin-top: -22px;
+             }   
+             
+        .container > .About-us
+             {
+                margin-top: -22px;
+             }     
+
+        .cardSection
+             {
+                margin-top: -22px;
+             }     
+      }      
+
+  @media (width <= 950px)
+      {
+          .homePageText
+             {
+                font-size: 4em;
+                text-align: center;
+             }
+      }
+
+  @media (width <= 890px)
+      {
+          .homePageText
+              {
+                 font-size: 3em;
+              }
+      }    
+      
+  @media (width <= 660px)
+       {
+          .homePage
+              {
+                 background-image: url(Img/smallScreenImg.jpg);
+                 font-size: 1.3em;
+              }
+       } 
+       
+  @media (width <= 570px)
+      {
+         .homePageText
+             {
+               font-size: 3em;
+               text-align: center;
+             }
+
+        .container > .moreAbout-us
+            {
+               word-spacing: 0.1em;
+            }   
+            
+         .reviewText > p
+             {
+                margin-left: auto;
+                margin-right: 15px;
+                text-align: center;
+             }   
+      }     
+      
+  @media (width <= 540px)
+      {
+          .rating > .star > p
+             {
+                margin-top: 32px;
+             }
+
+          .bookNow
+              {
+                 margin-top: 42px;
+              }   
+      }    
+
+  @media (width <= 400px)
+      {
+          .animatedPic > .discount > .Off
+              {
+                 font-size: 2em;
+                 margin-bottom: 30px;
+              }
+      }      
+
+
+                                                         /* ----------- AND ALL SET ---------- */
